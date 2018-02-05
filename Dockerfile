@@ -23,5 +23,5 @@ RUN yum -y update && \
 COPY conf/fluent-bit.conf /fluent-bit/etc/
 COPY conf/parsers.conf /fluent-bit/etc/
 
-CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf", "-vv"]
+CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf"]
 
