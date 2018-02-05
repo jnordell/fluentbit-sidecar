@@ -15,7 +15,7 @@ RUN yum -y update && \
     unzip "fluent-bit-$FLB_VERSION.zip" && \
     cd "/tmp/fluent-bit-${FLB_VERSION}/build" && \
     cmake -DFLB_DEBUG=On -DFLB_TRACE=On \
-          -DCMAKE_INSTALL_PREFIX=/fluent-bit/ -DFLB_BUFFERING=On -DFLB_SQLDB=On ../&& \
+          -DCMAKE_INSTALL_PREFIX=/fluent-bit/ -DFLB_BUFFERING=On -DFLB_JEMALLOC=On ../&& \
     make && \
     make install && \
     rm -rf /tmp/* /fluent-bit/include /fluent-bit/lib*
