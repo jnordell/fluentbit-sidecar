@@ -2,9 +2,9 @@ FROM centos:7
 
 MAINTAINER Jonas Nordell <jonas@redhat.com>
 
-ENV FLB_VERSION 0.12.12
+ENV FLB_VERSION 0.13-dev-0.6
 
-ENV FLB_TARBALL http://github.com/fluent/fluent-bit/archive/v$FLB_VERSION.zip
+ENV FLB_TARBALL http://github.com/fluent/fluent-bit/archive/$FLB_VERSION.zip
 
 RUN mkdir -p /fluent-bit/bin /fluent-bit/etc /fluent-bit/log
 
